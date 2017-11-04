@@ -1,17 +1,26 @@
 window.onload=function(){
-   var btn=document.querySelector(".btn")
-   var bar=document.querySelector(".bar")
-	bar.style.display="none";
-	
-	btn.onclick=function(){
-		if(bar.style.display=="none"){
-                   bar.style.display="block";
-		}else{
-			bar.style.display="none";}
+  function $(dom){
+  
+  var dom=document.querySelectorAll(dom)
+	  for(var i=0;i<dom.length;i++){
+	  return dom[i];
 
-	}
+	  
+	  
+	  }
+  
+  
+  }
+
+ function on(even,type,fn){
+     even.addEventListener(type,fn,false);
+ 
+ 
+ }
 
 
-
+   on($(".btn"),"click",function(){alert(4444)})
 
 }
+
+
