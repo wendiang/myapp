@@ -2,6 +2,12 @@
 	margin:0;
 	padding:0;
 	}
+
+	body{
+	  margin-top:35px;
+	
+	
+	}
 	.top{
 		width:100%;
 		height:35px;
@@ -10,6 +16,7 @@
 		top:0;
 		left:0;
 		right:0;
+		z-index:1000;
 	}
 	.top .left h1{
 		line-height:35px;
@@ -51,15 +58,24 @@
 	.content{
 		width:100%;
 		height:auto;
+		margin:0 auto;
+		background:green;
+		position:relative;
+		
 	}
 	.content .item{
 		width:50%;
 		height:auto;
 		float:left;
+	
+		
 	}
 	.content .item .pic{
-		width:100%;
+		width:90%;
 		height:auto;
+		margin:7px auto;
+		border-radius:2px;
+		box-shadow:0 0 5px rgba(0,0,0,0.9);
 	}
 	.content .item .pic img{
 		display:block;
